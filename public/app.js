@@ -41,6 +41,7 @@ timeline
 .to(".test_glass", 3, {top:"0%"}, "-=3")
 .fromTo(".ccontainer-fluid",{opacity:0}, {opacity:1, duration:3})
 .fromTo(".text",{opacity:0}, {opacity:1, duration:3})
+
 //scrollMagic
 let scene = new ScrollMagic.Scene({//we create a new scene, an animation
   triggerElement:"section",//when do we want it to start? meaning here immediatly in this case
@@ -55,13 +56,13 @@ let scene = new ScrollMagic.Scene({//we create a new scene, an animation
 .setPin("section")
 
 //code copied from plantchi
-const hoverImage = document.querySelector('.accordionContainer');
+/* const hoverImage = document.querySelector('.accordionContainer');
 const hoverImageOpen = document.querySelector('__1');
 /* const hoverImageOpen = document.getElementsByTagName('div'); */
-hoverImage.addEventListener('hover',function(e){
+/* hoverImage.addEventListener('hover',function(e){
     hoverImageOpen.hidden = true;
-    //like this the block ".choose-your-plant" will be hidden!
-});
+  });  */
+  //like this the block ".choose-your-plant" will be hidden!
 
 
 //carrousel Nisrine

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="544.182" height="402" viewBox="0 0 544.182 402">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(2,2,2,0.62);
+        stroke: #707070;
+      }
+    </style>
+  </defs>
+  <path id="test_shadow" data-name="test shadow" class="cls-1" d="M361.228,3696.02s-156.461,87-145.671,165.47,369.488,81.346,362.525-41.552S361.228,3696.02,361.228,3696.02Z" transform="translate(-124.505 -3605.519)"/>
+</svg>

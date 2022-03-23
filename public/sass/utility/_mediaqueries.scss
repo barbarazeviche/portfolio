@@ -1,0 +1,32 @@
+/* $small: 0px !default;
+$medium: 768px !default;
+$large: 1024px !default;
+$xlarge: 1920px !default;
+
+$breakpoints: (
+
+    small: $small,
+    medium: $medium,
+    large: $large,
+    xlarge: $xlarge,
+
+);
+
+@mixin breakpoint($size) {
+
+    $value: $size;
+
+
+    @if (type_of($size) == "string") {
+        $value: map-get($breakpoints, $size);
+    }
+
+    @if ($value>0) {
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+
+} */

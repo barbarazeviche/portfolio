@@ -107,34 +107,50 @@ html body .profile-container-item .profile-image .profile {
 html body .profile-container-item .profile-image .net {
   position: relative;
 }
-html body .fat-body .container {
-  height: 90rem;
+html body .fat-body .wrapper-bounce {
+  width: 500px;
+}
+html body .fat-body .div1, html body .fat-body .container-bounce {
+  height: 200px;
   margin: 30px 30px 30px 30px;
   width: 100%;
+  /* background-color: blue; */
 }
-html body .fat-body .container img {
+html body .fat-body .div1 {
+  width: 100%;
+}
+html body .fat-body .container-bounce {
+  position: relative;
+}
+html body .fat-body .container-bounce > .half-grid {
   position: absolute;
-  /* display:block; */
-  margin: 30px 30px 30px 30px;
-  object-fit: cover;
-  min-height: 100%;
-  /* z-index: -1; */
 }
-html body .fat-body .poppop {
-  min-height: 100%;
+html body .fat-body .container-bounce > .div1 > .poppop {
+  z-index: 2;
+}
+html body .fat-body .container-bounce > .grid {
   z-index: 1;
-  left: 45px;
-  display: block;
-}
-html body .fat-body .grid {
-  min-height: 100%;
-  z-index: -1;
-  left: 25px;
-  display: block;
 }
 html body .fat-body .half-grid {
   min-height: 100%;
   z-index: 1;
+  left: 25px;
+  display: block;
+  margin-top: 1px;
+  margin-left: -27px;
+}
+html body .fat-body .poppop {
+  min-height: 100%;
+  z-index: 0;
+  left: 45px;
+  display: block;
+  /* margin: 30px 30px 30px 30px; */
+  object-fit: cover;
+  min-height: 100%;
+}
+html body .fat-body .grid {
+  min-height: 100%;
+  z-index: -1;
   left: 25px;
   display: block;
 }
@@ -199,16 +215,14 @@ html body .fat-body .test_glass .glass {
     font-size: 16px;
   }*/
 }
-html body .fat-body .test_glass .glass .container-download-link {
+html body .fat-body .test_glass .glass .container-download-link .download-link {
   display: flex;
   justify-content: center;
-  align-content: center;
-}
-html body .fat-body .test_glass .glass .container-download-link .download-link {
-  height: 200px;
-  border: 1px solid black;
+  align-items: center;
+  height: 150px;
+  /* border: 1px solid black; */
   /* flex-basis:5rem; */
-  align-self: center;
+  /*  align-self: center; */
 }
 html body .fat-body .test_glass .glass .container-download-link .download-link a {
   font-family: helvetica;
@@ -369,7 +383,7 @@ html body .fat-body .test_glass .glass .item img {
 }
 html body .fat-body .test_glass .glass .projects-desc {
   padding: 5%;
-  color: var(--blue);
+  color: cadetblue;
   font-family: "Dream";
   font-weight: bolder;
   font-size: 1.1rem;
@@ -399,8 +413,8 @@ html body .fat-body .test_glass .glass .carousel__action button {
   border-radius: 50px;
   border: 0;
   font-weight: bold;
-  background-color: var(--blue);
-  color: var(--light-pink);
+  background-color: black;
+  color: pink;
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -540,26 +554,9 @@ html body .footer-fuck {
   font-size: 1rem;
   color: cadetblue;
   padding: 10px 10px 10px 10px;
-  /* position: absolute; */
   bottom: 0;
   z-index: 1000;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /*  position: absolute;
-   bottom: 0;
-   z-index: 1000;
-   margin-bottom: 100px;  */
-  /* .footer{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .footer-content{
-          background-color: red;
-          color:cadetblue;
-          padding:10px 10px 10px 10px;
-      }
-  } */
+  width: 100%;
 }
 
 /* @mixin h1(){

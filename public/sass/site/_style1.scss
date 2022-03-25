@@ -111,44 +111,66 @@ html {
       position: relative;
     }
 
-    .fat-body{
-
-    
+    .fat-body {
       //grid-section
-      .container {
-        height: 90rem;
+      .wrapper-bounce{
+        width: 500px;
+    }
+    
+    .div1, .container-bounce {
+        height: 200px;
         margin: 30px 30px 30px 30px;
         width: 100%;
-      }
-      .container img {
+        /* background-color: blue; */
+    }
+    
+    .div1{
+        width: 100%;
+        
+    }
+    
+    .container-bounce{
+        position: relative;
+        
+    }
+    
+    .container-bounce >.half-grid{
         position: absolute;
-        /* display:block; */
-        margin: 30px 30px 30px 30px;
-        object-fit: cover;
-        min-height: 100%;
-
-        /* z-index: -1; */
-      }
-      .poppop {
+    }
+    
+    .container-bounce > .div1 > .poppop{
+        z-index: 2;
+    }
+    
+    .container-bounce > .grid{
+        z-index: 1;
+    }
+    
+    
+    .half-grid {
         min-height: 100%;
         z-index: 1;
+        left: 25px;
+        display: block;
+        margin-top: 1px;
+        margin-left: -27px;
+    }
+    
+    .poppop {
+        min-height: 100%;
+        z-index: 0;
         left: 45px;
         display: block;
-      }
-
-      .grid {
+        /* margin: 30px 30px 30px 30px; */
+        object-fit: cover;
+        min-height: 100%;
+    }
+    .grid {
         min-height: 100%;
         z-index: -1;
         left: 25px;
         display: block;
-      }
-
-      .half-grid {
-        min-height: 100%;
-        z-index: 1;
-        left: 25px;
-        display: block;
-      }
+    }
 
       //cadet-blue section
       .test_glass {
@@ -179,14 +201,14 @@ html {
           /* display:inline-block; */
           /* .container-fluid { */
           .container-download-link {
-            display: flex;
-            justify-content: center;
-            align-content: center;
             .download-link {
-              height: 200px;
-              border: 1px solid black;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 150px;
+              /* border: 1px solid black; */
               /* flex-basis:5rem; */
-              align-self: center;
+             /*  align-self: center; */
 
               a {
                 font-family: helvetica;
@@ -337,6 +359,7 @@ html {
             color: #4b5156;
             font-size: 16px;
           }*/
+
           //Carousel Nisrine
           .carousel {
             width: 100%;
@@ -398,7 +421,7 @@ html {
 
           .projects-desc {
             padding: 5%;
-            color: var(--blue);
+            color: cadetblue;
             font-family: "Dream";
             font-weight: bolder;
             font-size: 1.1rem;
@@ -427,8 +450,8 @@ html {
               border-radius: 50px;
               border: 0;
               font-weight: bold;
-              background-color: var(--blue);
-              color: var(--light-pink);
+              background-color: black;
+              color: pink;
               cursor: pointer;
               width: 40px;
               height: 40px;
@@ -445,8 +468,8 @@ html {
       }
     }
 
-    .footer-fuck{
-      width:100%;
+    .footer-fuck {
+      width: 100%;
     }
     //accordion Normal
   }

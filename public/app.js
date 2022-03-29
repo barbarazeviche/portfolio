@@ -1,3 +1,7 @@
+'use strict';
+
+//carrousel Nini
+
 let slidePosition = 0;
 
 const slides = document.getElementsByClassName('carousel__item');
@@ -19,9 +23,6 @@ document.getElementById('carousel-prev').addEventListener("click", function () {
 
   moveToPrevSlide();
 });
-
-
-
 
 //move the slides
 

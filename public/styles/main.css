@@ -30,6 +30,13 @@ html body {
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
   /*burger Menu*/
+  /* .yellow{
+    color: yellow;
+  }
+
+  .blue{
+    color:blue;
+  } */
   /*rest of header*/
 }
 html body .header {
@@ -47,11 +54,14 @@ html body .hamburger {
   position: fixed;
   z-index: 100;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   padding: 4px;
-  border: black solid 1px;
-  background: white;
+  /* border: black solid 1px; */
+  background: transparent;
   cursor: pointer;
+}
+html body button {
+  border-style: none;
 }
 html body .closeIcon {
   display: none;
@@ -70,12 +80,26 @@ html body .menu {
   list-style: none;
   text-decoration: none;
   padding-top: 4rem;
+  padding-left: 4rem;
+  line-height: 1.5rem;
+}
+html body .github {
+  text-decoration: none;
+  color: #eee;
+}
+html body .email {
+  text-decoration: none;
+  color: #eee;
+}
+html body .linkedin {
+  text-decoration: none;
+  color: #eee;
 }
 html body .menuItem {
   display: block;
-  margin: 2rem 4rem;
-  font-size: 1.8rem;
-  color: white;
+  /*  margin: 2rem 4rem; */
+  text-decoration: none;
+  color: #eee;
   text-decoration: none;
 }
 html body .menuItem:hover {
@@ -107,31 +131,32 @@ html body .profile-container-item .profile-image .profile {
 html body .profile-container-item .profile-image .net {
   position: relative;
 }
-html body .fat-body .wrapper-bounce {
-  width: 500px;
+html body .beach-body .wrapper-bounce {
+  /* width: 500px; */
+  height: 1000px;
 }
-html body .fat-body .div1, html body .fat-body .container-bounce {
+html body .beach-body .wrapper-bounce .div1, html body .beach-body .wrapper-bounce .container-bounce {
   height: 200px;
   margin: 30px 30px 30px 30px;
   width: 100%;
   /* background-color: blue; */
 }
-html body .fat-body .div1 {
+html body .beach-body .wrapper-bounce .div1 {
   width: 100%;
 }
-html body .fat-body .container-bounce {
+html body .beach-body .wrapper-bounce .container-bounce {
   position: relative;
 }
-html body .fat-body .container-bounce > .half-grid {
+html body .beach-body .wrapper-bounce .container-bounce > .half-grid {
   position: absolute;
 }
-html body .fat-body .container-bounce > .div1 > .poppop {
+html body .beach-body .wrapper-bounce .container-bounce > .div1 > .poppop {
   z-index: 2;
 }
-html body .fat-body .container-bounce > .grid {
+html body .beach-body .wrapper-bounce .container-bounce > .grid {
   z-index: 1;
 }
-html body .fat-body .half-grid {
+html body .beach-body .wrapper-bounce .half-grid {
   min-height: 100%;
   z-index: 1;
   left: 25px;
@@ -139,7 +164,7 @@ html body .fat-body .half-grid {
   margin-top: 1px;
   margin-left: -27px;
 }
-html body .fat-body .poppop {
+html body .beach-body .wrapper-bounce .poppop {
   min-height: 100%;
   z-index: 0;
   left: 45px;
@@ -148,13 +173,13 @@ html body .fat-body .poppop {
   object-fit: cover;
   min-height: 100%;
 }
-html body .fat-body .grid {
+html body .beach-body .wrapper-bounce .grid {
   min-height: 100%;
   z-index: -1;
   left: 25px;
   display: block;
 }
-html body .fat-body .test_glass {
+html body .beach-body .test_glass {
   width: 100%;
   background-color: cadetblue;
   padding: 30px 30px 30px 30px;
@@ -165,11 +190,12 @@ html body .fat-body .test_glass {
   z-index: 2;
   /* } */
 }
-html body .fat-body .test_glass .glass {
+html body .beach-body .test_glass .glass {
   background: white;
   width: 60%;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.94), rgba(249, 245, 245, 0.18));
   border-radius: 2rem;
+  box-shadow: 0 15px 20px #3232321a, 0 5px 15px #0000001a;
   /*  z-index: 2; */
   backdrop-filter: blur(2rem);
   /* width: 80%; */
@@ -214,8 +240,11 @@ html body .fat-body .test_glass .glass {
     color: #4b5156;
     font-size: 16px;
   }*/
+  /* .item:hover {
+    transform: translate3d(0, -10px, 0);
+  } */
 }
-html body .fat-body .test_glass .glass .container-download-link .download-link {
+html body .beach-body .test_glass .glass .container-download-link .download-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,30 +253,30 @@ html body .fat-body .test_glass .glass .container-download-link .download-link {
   /* flex-basis:5rem; */
   /*  align-self: center; */
 }
-html body .fat-body .test_glass .glass .container-download-link .download-link a {
+html body .beach-body .test_glass .glass .container-download-link .download-link a {
   font-family: helvetica;
   text-decoration: none;
 }
-html body .fat-body .test_glass .glass .accordionNormal > *,
-html body .fat-body .test_glass .glass *:after,
-html body .fat-body .test_glass .glass *:before {
+html body .beach-body .test_glass .glass .accordionNormal > *,
+html body .beach-body .test_glass .glass *:after,
+html body .beach-body .test_glass .glass *:before {
   box-sizing: border-box;
 }
-html body .fat-body .test_glass .glass :root {
+html body .beach-body .test_glass .glass :root {
   font-size: 16px;
 }
-html body .fat-body .test_glass .glass .accordionNormal > details > div > p {
+html body .beach-body .test_glass .glass .accordionNormal > details > div > p {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   /* min-height: 100rem; */
   font-size: 1.25rem;
-  text-align: justify;
+  /* text-align: justify; */
   text-justify: inter-word;
 }
-html body .fat-body .test_glass .glass *:focus {
+html body .beach-body .test_glass .glass *:focus {
   outline: none;
 }
-html body .fat-body .test_glass .glass .accordionNormal > div {
+html body .beach-body .test_glass .glass .accordionNormal > div {
   width: 90%;
   max-width: 600px;
   margin-left: auto;
@@ -255,33 +284,33 @@ html body .fat-body .test_glass .glass .accordionNormal > div {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-html body .fat-body .test_glass .glass .accordionNormal > details > div {
+html body .beach-body .test_glass .glass .accordionNormal > details > div {
   border-left: 2px solid #000;
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
   padding: 1.5em;
 }
-html body .fat-body .test_glass .glass details div > * + * {
+html body .beach-body .test_glass .glass details div > * + * {
   margin-top: 1.5em;
 }
-html body .fat-body .test_glass .glass details + details {
+html body .beach-body .test_glass .glass details + details {
   margin-top: 0.5rem;
 }
-html body .fat-body .test_glass .glass summary {
+html body .beach-body .test_glass .glass summary {
   list-style: none;
   font-family: "Inter", sans-serif;
 }
-html body .fat-body .test_glass .glass summary::-webkit-details-marker {
+html body .beach-body .test_glass .glass summary::-webkit-details-marker {
   display: none;
 }
-html body .fat-body .test_glass .glass summary {
+html body .beach-body .test_glass .glass summary {
   border: 2px solid #000;
   padding: 0.75em 1em;
   cursor: pointer;
   position: relative;
   padding-left: 3.25rem;
 }
-html body .fat-body .test_glass .glass summary:before {
+html body .beach-body .test_glass .glass summary:before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -296,55 +325,67 @@ html body .fat-body .test_glass .glass summary:before {
   align-items: center;
   flex-shrink: 0;
 }
-html body .fat-body .test_glass .glass details[open] summary {
+html body .beach-body .test_glass .glass details[open] summary {
   background-color: #eee;
 }
-html body .fat-body .test_glass .glass details[open] summary:before {
+html body .beach-body .test_glass .glass details[open] summary:before {
   content: "↑";
 }
-html body .fat-body .test_glass .glass summary:hover {
+html body .beach-body .test_glass .glass summary:hover {
   background-color: #eee;
 }
-html body .fat-body .test_glass .glass a {
+html body .beach-body .test_glass .glass a {
   color: inherit;
   font-weight: 600;
   text-decoration: none;
   box-shadow: 0 1px 0 0;
 }
-html body .fat-body .test_glass .glass a:hover {
+html body .beach-body .test_glass .glass a:hover {
   box-shadow: 0 3px 0 0;
 }
-html body .fat-body .test_glass .glass code {
+html body .beach-body .test_glass .glass code {
   font-family: monospace;
   font-weight: 600;
 }
-html body .fat-body .test_glass .glass .carousel {
+html body .beach-body .test_glass .glass .group-projects {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-left: -23%;
+  margin: 10px 0px 10px 10px;
+}
+@sm {
+  html body .beach-body .test_glass .glass .group-projects {
+    background-color: red;
+  }
+}
+html body .beach-body .test_glass .glass .carousel {
   width: 100%;
   height: 100%;
   margin-left: 23%;
 }
 @media (max-width: 720px) {
-  html body .fat-body .test_glass .glass .carousel {
+  html body .beach-body .test_glass .glass .carousel {
     width: 100%;
     margin-left: 15%;
   }
 }
 @media (max-width: 414px) {
-  html body .fat-body .test_glass .glass .carousel {
+  html body .beach-body .test_glass .glass .carousel {
     margin-left: 5%;
   }
 }
-html body .fat-body .test_glass .glass .carousel__item,
-html body .fat-body .test_glass .glass .carousel__item--hidden {
+html body .beach-body .test_glass .glass .carousel__item,
+html body .beach-body .test_glass .glass .carousel__item--hidden {
   display: none;
   width: 100%;
 }
-html body .fat-body .test_glass .glass .carousel__item--visible {
+html body .beach-body .test_glass .glass .carousel__item--visible {
   display: block;
   animation: fadeVisibility 0.5s;
 }
 @media (max-width: 414px) {
-  html body .fat-body .test_glass .glass .carousel__item--visible {
+  html body .beach-body .test_glass .glass .carousel__item--visible {
     animation: none;
   }
 }
@@ -354,7 +395,7 @@ html body .fat-body .test_glass .glass .carousel__item--visible {
     transform: opacity ease-in-out;
   }
 }
-html body .fat-body .test_glass .glass .item {
+html body .beach-body .test_glass .glass .item {
   width: 55%;
   background-color: var(--light-pink);
   box-shadow: 0 15px 20px #3232321a, 0 5px 15px #0000001a;
@@ -363,33 +404,30 @@ html body .fat-body .test_glass .glass .item {
   border-radius: 20px;
 }
 @media (max-width: 720px) {
-  html body .fat-body .test_glass .glass .item {
+  html body .beach-body .test_glass .glass .item {
     width: 70%;
   }
 }
 @media (max-width: 414px) {
-  html body .fat-body .test_glass .glass .item {
+  html body .beach-body .test_glass .glass .item {
     width: 90%;
   }
 }
-html body .fat-body .test_glass .glass .item:hover {
-  transform: translate3d(0, -10px, 0);
-}
-html body .fat-body .test_glass .glass .item img {
+html body .beach-body .test_glass .glass .item img {
   display: block;
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
-html body .fat-body .test_glass .glass .projects-desc {
+html body .beach-body .test_glass .glass .projects-desc {
   padding: 5%;
-  color: cadetblue;
-  font-family: "Dream";
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
 }
-html body .fat-body .test_glass .glass .carousel__action {
+html body .beach-body .test_glass .glass .carousel__action {
   display: flex;
   width: 55%;
   height: 20%;
@@ -399,31 +437,32 @@ html body .fat-body .test_glass .glass .carousel__action {
   padding-bottom: 3%;
 }
 @media (max-width: 720px) {
-  html body .fat-body .test_glass .glass .carousel__action {
+  html body .beach-body .test_glass .glass .carousel__action {
     width: 70%;
     padding-bottom: 8%;
   }
 }
 @media (max-width: 414px) {
-  html body .fat-body .test_glass .glass .carousel__action {
+  html body .beach-body .test_glass .glass .carousel__action {
     width: 90%;
   }
 }
-html body .fat-body .test_glass .glass .carousel__action button {
+html body .beach-body .test_glass .glass .carousel__action button {
   border-radius: 50px;
-  border: 0;
+  border: 2px solid black;
   font-weight: bold;
-  background-color: black;
-  color: pink;
+  background-color: transparent;
+  color: #fcfcfc;
   cursor: pointer;
   width: 40px;
-  height: 40px;
+  height: 30px;
 }
-html body .fat-body .test_glass .glass .carousel__action #carousel-prev {
+html body .beach-body .test_glass .glass .carousel__action #carousel-prev {
   margin-left: 2%;
 }
-html body .fat-body .test_glass .glass .carousel__action #carousel-next {
+html body .beach-body .test_glass .glass .carousel__action #carousel-next {
   margin-right: 2%;
+  margin-bottom: 12%;
 }
 html body .footer-fuck {
   width: 100%;
@@ -487,7 +526,8 @@ html body .footer-fuck {
   height: 296px;
   width: 100%;
   display: flex;
-  border: 1px solid black;
+  /* border: 5px dotted black;
+  margin: 10px 10px 10px 10px; */
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -498,7 +538,7 @@ html body .footer-fuck {
       /* align-self: center; }*/
 }
 .skills .title-skills {
-  width: 40%;
+  /* width: 40%; */
   /* height: 10px;*/
 }
 .skills .title-skills h4 {

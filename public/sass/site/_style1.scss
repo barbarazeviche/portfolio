@@ -42,11 +42,15 @@ html {
       position: fixed;
       z-index: 100;
       top: 1rem;
-      right: 1rem;
+      left: 1rem;
       padding: 4px;
-      border: black solid 1px;
-      background: white;
+      /* border: black solid 1px; */
+      background: transparent;
       cursor: pointer;
+    }
+
+    button{
+      border-style: none;
     }
 
     .closeIcon {
@@ -67,15 +71,41 @@ html {
       list-style: none;
       text-decoration: none;
       padding-top: 4rem;
+      padding-left:4rem;
+      line-height: 1.5rem;
     }
+
+    .github{
+      text-decoration: none;
+      color:#eee;
+    }
+
+    .email{
+      text-decoration: none;
+      color:#eee;
+    }
+
+    .linkedin{
+      text-decoration: none;
+      color:#eee;
+    }
+
+    /* .yellow{
+      color: yellow;
+    }
+
+    .blue{
+      color:blue;
+    } */
 
     .menuItem {
       display: block;
-      margin: 2rem 4rem;
-      font-size: 1.8rem;
-      color: white;
+     /*  margin: 2rem 4rem; */
+      text-decoration: none;
+      color:#eee;
       text-decoration: none;
     }
+
 
     .menuItem:hover {
       text-decoration: underline;
@@ -84,6 +114,7 @@ html {
     ul {
       list-style-type: none;
     }
+
     .showMenu {
       transform: translateY(0);
     }
@@ -111,67 +142,67 @@ html {
       position: relative;
     }
 
-    .fat-body {
+    .beach-body {
       //grid-section
       .wrapper-bounce{
-        width: 500px;
-    }
-    
-    .div1, .container-bounce {
-        height: 200px;
-        margin: 30px 30px 30px 30px;
-        width: 100%;
-        /* background-color: blue; */
-    }
-    
-    .div1{
-        width: 100%;
-        
-    }
-    
-    .container-bounce{
-        position: relative;
-        
-    }
-    
-    .container-bounce >.half-grid{
-        position: absolute;
-    }
-    
-    .container-bounce > .div1 > .poppop{
-        z-index: 2;
-    }
-    
-    .container-bounce > .grid{
-        z-index: 1;
-    }
-    
-    
-    .half-grid {
-        min-height: 100%;
-        z-index: 1;
-        left: 25px;
-        display: block;
-        margin-top: 1px;
-        margin-left: -27px;
-    }
-    
-    .poppop {
-        min-height: 100%;
-        z-index: 0;
-        left: 45px;
-        display: block;
-        /* margin: 30px 30px 30px 30px; */
-        object-fit: cover;
-        min-height: 100%;
-    }
-    .grid {
-        min-height: 100%;
-        z-index: -1;
-        left: 25px;
-        display: block;
-    }
+        /* width: 500px; */
+        height: 1000px;
+      
 
+        .div1, .container-bounce {
+            height: 200px;
+            margin: 30px 30px 30px 30px;
+            width: 100%;
+            /* background-color: blue; */
+        }
+        
+        .div1{
+            width: 100%;
+            
+        }
+        
+        .container-bounce{
+            position: relative;
+            
+        }
+        
+        .container-bounce >.half-grid{
+            position: absolute;
+        }
+        
+        .container-bounce > .div1 > .poppop{
+            z-index: 2;
+        }
+        
+        .container-bounce > .grid{
+            z-index: 1;
+        }
+        
+        .half-grid {
+            min-height: 100%;
+            z-index: 1;
+            left: 25px;
+            display: block;
+            margin-top: 1px;
+            margin-left: -27px;
+        }
+        
+        .poppop {
+            min-height: 100%;
+            z-index: 0;
+            left: 45px;
+            display: block;
+            /* margin: 30px 30px 30px 30px; */
+            object-fit: cover;
+            min-height: 100%;
+        }
+        .grid {
+            min-height: 100%;
+            z-index: -1;
+            left: 25px;
+            display: block;
+        }
+      }
       //cadet-blue section
       .test_glass {
         width: 100%;
@@ -185,8 +216,9 @@ html {
         .glass {
           background: white;
           width: 60%;
-          background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+          background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.94), rgba(249, 245, 245, 0.18));
           border-radius: 2rem;
+          box-shadow: 0 15px 20px #3232321a, 0 5px 15px #0000001a;
           /*  z-index: 2; */
           backdrop-filter: blur(2rem);
 
@@ -232,7 +264,7 @@ html {
             line-height: 1.5;
             /* min-height: 100rem; */ //vh
             font-size: 1.25rem;
-            text-align: justify;
+            /* text-align: justify; */
             text-justify: inter-word;
           }
 
@@ -360,7 +392,23 @@ html {
             font-size: 16px;
           }*/
 
+
+
           //Carousel Nisrine
+
+          .group-projects{
+            text-align: center;
+            font-size: 25px;
+            color:white;
+            margin-left: -23%;
+            margin: 10px 0px 10px 10px;
+            //TODOMediaqueries
+            @sm{
+              background-color:red;
+            }
+          }
+
+
           .carousel {
             width: 100%;
             height: 100%;
@@ -372,6 +420,8 @@ html {
             @media (max-width: 414px) {
               margin-left: 5%;
             }
+
+            
           }
           .carousel__item,
           .carousel__item--hidden {
@@ -398,7 +448,7 @@ html {
             background-color: var(--light-pink);
             box-shadow: 0 15px 20px #3232321a, 0 5px 15px #0000001a;
             transition: transform 0.3s;
-            transform: translate3d(0, -1px, 0);
+            transform: translate3d(0, -1px, 0); 
             border-radius: 20px;
             @media (max-width: 720px) {
               width: 70%;
@@ -408,9 +458,9 @@ html {
             }
           }
 
-          .item:hover {
+          /* .item:hover {
             transform: translate3d(0, -10px, 0);
-          }
+          } */
 
           .item img {
             display: block;
@@ -421,10 +471,10 @@ html {
 
           .projects-desc {
             padding: 5%;
-            color: cadetblue;
-            font-family: "Dream";
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
             font-weight: bolder;
-            font-size: 1.1rem;
+            font-size: 1rem;
             text-align: center;
             // @media (max-width: 200px) {
             //     font-size: 0.8rem;
@@ -448,19 +498,20 @@ html {
             }
             button {
               border-radius: 50px;
-              border: 0;
+              border: 2px solid black;
               font-weight: bold;
-              background-color: black;
-              color: pink;
+              background-color:transparent;
+              color: rgb(252, 252, 252);
               cursor: pointer;
               width: 40px;
-              height: 40px;
+              height: 30px;
             }
             #carousel-prev {
               margin-left: 2%;
             }
             #carousel-next {
               margin-right: 2%;
+              margin-bottom: 12%;
             }
           }
         }
